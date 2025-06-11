@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo Gallery">
+    <title>Oman Tour Company - Gallery</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PS1MV5BPQ6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PS1MV5BPQ6');
+</script>
+</head>
+<body>
+    <header>
+        <img src="OTC_Logo.jpeg" alt="Oman Tour Logo">
+        <p class="nav-phone">📱 Phone: <a href="telto:+968 1234 5678">+968 1234 5678</a></p>
+        <p class="nav-email">✉️ Email: <a href="mailto:info@omantourcompany.com">info@omantourcompany.com</a></p>
+        <nav>
+            <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
+            <a href="tours.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Tours'});">Tours</a>
+            <a href="gallery.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'});">Gallery</a>
+            <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Photo Gallery</h1>
+        <p>Explore the beauty of Oman through our lens</p>
+        <a href="tours.html"><button>Explore Tours</button></a>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <img src="Oman_Flag.jpg" alt="Oman Flag taken by Silas Baisch">
+        <img src="Oman_Desert.jpg" alt="Desert taken by Emma Harrisova">
+        <img src="Oman_Mosque.jpg" alt="Mosque taken by Anfal Shamsudeen">
+        <img src="Oman_Harbor.jpg" alt="Harbor taken by Lena Balk">
+    </section>
+
+    <section class="explore-section">
+        <a href="tours.html"><button class="explore-button">Explore Tours</button></a>
+    </section>
+    <br>
+    <section class="contact" id="contact">
+        <img src="OTC_Logo.jpeg" alt="Oman Tour Company Logo" class="contact-logo">
+        <section class="contact-info">
+            <h2>Our Details</h2>
+            <p>📍 Location: Muscat, Oman</p>
+            <p>📱 Phone: <a href="telto:+968 1234 5678">+968 1234 5678</a></p>
+            <p>✉️ Email: <a href="mailto:info@omantourcompany.com">info@omantourcompany.com</a></p>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Oman Tour Company | All Rights Reserved | Created by Imran Qureshi | Picture Authors: 
+        <a href="https://unsplash.com/@anfalshams" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Anfal Shamsudeen'})">Anfal Shamsudeen</a>,
+        <a href="https://unsplash.com/@silasbaisch" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Silas Baisch'})">Silas Baisch</a>,
+        <a href="https://unsplash.com/@lenabalk" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Lena Balk'})">Lena Balk</a>,
+        <a href="https://unsplash.com/@emm_harri" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Emma Harrisova'})">Emma Harrisova</a>,
+        <a href="https://unsplash.com/@adil_r93" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Adil Riyami'})">Adil Riyami</p>
+    </footer>
+</body>
+</html>
