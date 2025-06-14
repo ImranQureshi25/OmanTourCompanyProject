@@ -33,7 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.cookie = `referral=${referralSource}; max-age=${60 * 60 * 24 * 7}; path=/`;
 
     // Initializes EmailJS with public key
-    emailjs.init("NGnoHNIBJboHhKT5N");
+      (function () {
+    emailjs.init({
+      publicKey: 'Dq01G2bPxf1mPTqWv',
+    });
+  })();
 
     // Gets the contact form element
     const contactForm = document.getElementById('contact-form');
@@ -48,8 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
-            emailjs.sendForm('service_64zhthi', 'template_9in7scq', this)
-                .then(function() {
+            emailjs.send('service_64zhthi', 'template_9in7scq', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', success);
                     alert('Message sent successfully!');
                     contactForm.reset();
                 })
