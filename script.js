@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
-            emailjs.send('service_64zhthi', 'template_9in7scq', this)
+            emailjs.sendForm('service_64zhthi', 'template_9in7scq', this)
                 .then(function(response) {
                     console.log('SUCCESS!', success);
                     alert('Message sent successfully!');
