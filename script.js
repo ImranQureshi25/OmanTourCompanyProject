@@ -33,18 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.cookie = `referral=${referralSource}; max-age=${60 * 60 * 24 * 7}; path=/`;
 
     // Initializes EmailJS with public key
-    document.addEventListener('DOMContentLoaded', function() {
     emailjs.init("NGnoHNIBJboHhKT5N");
-    });
 
     // Gets the contact form element
     const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
     
-    if (contactForm) {
+    if (contactForm && submitBtn) {
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
+
+            console.log('Sending form data:', this);
             
-            const submitBtn = document.getElementById('submit-btn');
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
@@ -61,6 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send Message';
                 });
-        }); // Test form submission works on EmailJS but not directly from website //
+        }); // Test form submission works on EmailJS but not directly from website, working on fix //
     }
 });
