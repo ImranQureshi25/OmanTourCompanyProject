@@ -47,14 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
 
+            // Defines the template parameters
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                user_phone: document.getElementById('phone').value,
+                tour_type: document.getElementById('tour-type').value,
+                message: document.getElementById('message').value
+            };
+
             console.log('Sending form data:', this);
             
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
-            emailjs.sendForm('service_64zhthi', 'template_9in7scq', this)
+            emailjs.send('service_64zhthi', 'template_9in7scq', templateParams)
                 .then(function(response) {
-                    console.log('SUCCESS!', success);
+                    console.log('SUCCESS!', response);
                     alert('Message sent successfully!');
                     contactForm.reset();
                 })
@@ -66,6 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send Message';
                 });
-        }); // Test form submission works on EmailJS but not directly from website, working on fix //
+        });
     }
 });
