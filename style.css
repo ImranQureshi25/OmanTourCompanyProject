@@ -42,7 +42,7 @@ nav a {
 
 .hero {
   margin-top: 80px;
-  background: url('Oman_Background.jpg') no-repeat center center/cover; /*Background taken by Adil Riyami*/
+  background: url('images/Oman_Background.jpg') no-repeat center center/cover; /*Background taken by Adil Riyami*/
   height: 90vh;
   color: white;
   display: flex;
