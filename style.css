@@ -12,13 +12,14 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.8;
+  background: #FFFFF0;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #0a4f70;
+  background-color: #C19A6B;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -65,7 +66,7 @@ nav a {
 .hero button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #0a4f70;
+  background-color: #C19A6B;
   color: white;
   border: none;
   cursor: pointer;
@@ -80,7 +81,7 @@ nav a {
 .explore-button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #0a4f70;
+  background-color: #C19A6B;
   color: white;
   border: none;
   cursor: pointer;
@@ -137,7 +138,7 @@ nav a {
 .tour button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #0a4f70;
+  background-color: #C19A6B;
   color: white;
   border: none;
   border-radius: 8px;
@@ -176,7 +177,7 @@ nav a {
   right: 0;
   top: 100px;
   width: 250\px;
-  background: #0a4f70;
+  background: #C19A6B;
   color: white;
   padding: 1rem;
   border-radius: 8px 0 0 8px;
@@ -199,7 +200,7 @@ nav a {
 }
 
 .submit-button {
-  background-color: #0a4f70;
+  background-color: #C19A6B;
   color: white;
   border: none;
   padding: 0.75rem;
