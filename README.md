@@ -7,7 +7,7 @@ OmanTourCompanyProject is a web-based project designed to showcase the services,
 
 ## Technologies Used
 - HTML (Primary Language)
-- CSS (Design and Interactive Sizing)
+- CSS (Flexbox/Grid Design with Interactive Sizing)
 - JavaScript (Email Inquiry Feature, Button Messages, and Google Analytics)
 - [GitHub Pages](https://imranqureshi25.github.io/OmanTourCompanyProject/) for hosting
 
